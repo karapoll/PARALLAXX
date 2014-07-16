@@ -1,0 +1,180 @@
+body { 
+	background: #f5f5f5;
+	position: relative;
+	font-family: Helvetica, sans-serif;
+	font-size: 2rem;
+	font-weight: lighter; 
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	font-family: arial, sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+p {
+	width: 70%;
+	margin: 2rem auto;
+	font-size: 1rem;
+	line-height: 1.7rem;
+}
+
+footer a {
+	font-family: Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: lighter;
+	color: #000;
+}
+
+#prim-nav {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.prim-nav {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	background: #272727;
+	opacity: 0.8;
+}
+
+.prim-nav > li {
+	width: 17%;
+	float: left;
+}
+
+.prim-nav > li:first-child{
+	width: 32%;
+}
+
+.prim-nav > li:first-child > a {
+	text-align: left;
+	padding-left: 5%;
+}
+
+.prim-nav > li > a {
+	display: block;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: center;
+}
+
+.prim-nav > li > a:hover {
+	color: lightblue;
+}
+
+.active > a {
+	color: lightblue;
+}
+
+.resp-icon {
+	float: left;
+	width: 10%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	background: #272727;
+	opacity: 0.8;
+	display: none;
+}
+
+*[class^="parallax"] {
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.parallax-one {
+	background: url('../img/background2.jpg') no-repeat;
+}
+
+.parallax-two {
+	background: url('../img/background1.jpg') no-repeat;
+}
+
+.section-one, .section-two {
+	width: 100%; 
+	min-height: 32rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.section-text{
+	width: 100%; 
+	min-height: 28rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.section-one h2, .section-two h2 {
+	font-size: 2.3rem;
+	font-weight: bold;
+	background-color: #232323;
+	color: white;
+	position: absolute;
+	bottom: 5.6rem; 
+	left: 15%;
+	padding: 0.3rem 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 43.75em){
+
+    #prim-nav {
+		width: 100%;
+	}
+
+	.prim-nav {
+		width: 93%;
+	}
+
+	.resp-icon {
+		display: block;
+		width: 7%;
+	}
+
+	.resp-nav > ul {
+		visibility: hidden;
+	}
+
+	.resp-nav-visible > ul {
+		visibility: visible;
+	}
+
+	.resp-nav-visible > ul > li {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child > a {
+		text-align: center;
+		padding: 1rem 0;
+	}
+
+}

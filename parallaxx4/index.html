@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>PARALLAXX4</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="web design, responsive, web development, web developer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon_arrow.png" />
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+		<script type="text/javascript" src="js/site.js"></script>
+	</head>
+
+	<body>
+
+		<nav id="prim-nav" class="resp-nav">
+            <ul class="prim-nav">
+                <li class="logo"><a href="../parallart/index.html">// PARALLAX</a></li>
+                <li><a href="../parallart/index.html">PARALLART</a></li>
+                <li><a href="../parallaxx2/index.html">PARALLAXX2</a></li>
+                <li><a href="../parallaxx3/index.html">PARALLAXX3</a></li>
+                <li class="active"><a href="#">PARALLAXX4</a></li>
+            </ul>
+            <a href="#" class="resp-icon">=</a>
+        </nav>
+
+		<ul id="nav">
+			<li><a href="#intro" title="Next Section"><img src="img/dot.png" alt="Link" /></a></li>
+		    <li><a href="#second" title="Next Section"><img src="img/dot.png" alt="Link" /></a></li>
+		    <li><a href="#third" title="Next Section"><img src="img/dot.png" alt="Link" /></a></li>
+		</ul>
+		
+		<div id="intro">
+			<div class="story">
+		    	<div class="float-left">
+					<h2>(Almost) Static Background</h2>
+			        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.
+			        </p>
+			        <p>You might use the scrollbar or the dots-elevator related to the "Scroll To" function.</p>
+		        </div>
+		    </div>
+		</div>
+		
+		<div id="second">
+			<div class="story">
+				<div class="background"></div>
+		    	<div class="float-right">
+		            <h2>Multiple Backgrounds</h2>
+		            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section - every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
+		            <p>Nearby objects have a larger parallax than more distant objects when observed from different positions, so parallax scrolling can be used to determine distances.</p>
+		        </div>
+		    </div>
+		</div>
+		
+		<div id="third">
+			<div class="story">
+				<div class="background"></div>
+		    	<div class="float-left">
+		        	<h2>What About (Scrolling) Parallax Effect?</h2>
+		            <p>The parallax effect has been around for years in classic video games, but it became a trend in the web design world relatively recently. This cool effect is now commonly seen as part of the scrolling feature of a web page.</p>
+		            <p>It uses multiple backgrounds which seem to move at different speeds to create a sensation of depth (creating a faux-3D effect) for an interesting browsing experience!</p>
+		            <a href="http://www.karimapollinaire.com/" target="_blank"><p>&copy; Karim Apollinaire 2014</p></a>
+		        </div>
+		    </div>
+		</div>
+
+		<script type="text/javascript" src="js/respNav.js"></script>
+        <script>
+            var respNav = new RespNav();
+            respNav.init();
+        </script>
+		
+	</body>
+</html>

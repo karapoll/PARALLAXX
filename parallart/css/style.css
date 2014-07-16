@@ -1,0 +1,212 @@
+body {
+	width: 61.25rem;
+	position: relative;
+	background: #eaecec url(../img/background.png) repeat;
+	font-family: arial, sans-serif;
+	font-weight: lighter;
+}
+
+a {
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+#prim-nav {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.prim-nav {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	background: #272727;
+	opacity: 0.8;
+}
+
+.prim-nav > li {
+	width: 17%;
+	float: left;
+}
+
+.prim-nav > li:first-child{
+	width: 32%;
+}
+
+.prim-nav > li:first-child > a {
+	text-align: left;
+	padding-left: 5%;
+}
+
+.prim-nav > li > a {
+	display: block;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: center;
+}
+
+.prim-nav > li > a:hover {
+	color: lightblue;
+}
+
+.active > a {
+	color: lightblue;
+}
+
+.resp-icon {
+	float: left;
+	width: 10%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	background: #272727;
+	opacity: 0.8;
+	display: none;
+}
+
+p {
+	font-size: 1rem;
+}
+
+article {
+	width: 35%;
+	margin: 3.5rem 0 0 2%;
+}
+
+footer {
+	padding: 0 2% 2rem 2%;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+footer a:hover {
+	color: black;
+}
+
+.content {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.parallax {
+	width: 100%;
+	height: 37rem;
+}
+
+.sphere-rose {
+	width: 90%;
+	height: 31rem;
+	text-align: center;
+}
+
+.sphere-black {
+	width: 100%;
+	height: 30rem;
+	text-align: center;
+	padding-top: 6.8rem;
+}
+
+.line1 {
+	width: 70%;
+	height: 29rem;
+	text-align: center;
+}
+
+.line2 {
+	width: 60%;
+	height: 28rem;
+	text-align: center;
+	padding-left: 7%;
+}
+
+.line3 {
+	width: 50%;
+	height: 29rem;
+	text-align: center;
+}
+
+.sticks1 {
+	width: 80%;
+	height: 25rem;
+	text-align: right;
+}
+
+.sticks2 {
+	width: 80%;
+	height: 23rem;
+	text-align: left;
+	padding-left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 43.75em){
+
+    #prim-nav {
+		width: 100%;
+	}
+
+	.prim-nav {
+		width: 93%;
+	}
+
+	.resp-icon {
+		display: block;
+		width: 7%;
+	}
+
+	.resp-nav > ul {
+		visibility: hidden;
+	}
+
+	.resp-nav-visible > ul {
+		visibility: visible;
+	}
+
+	.resp-nav-visible > ul > li {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child > a {
+		text-align: center;
+		padding: 1rem 0;
+	}
+
+	.content {
+		padding-top: 11rem;
+	}
+
+	article {
+		display: none;
+	}
+
+}

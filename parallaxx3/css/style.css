@@ -1,0 +1,209 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	position: relative;	
+	height: 400rem;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	font-family: arial, sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+p {
+	font-size: 4.5rem;
+	width: 40%;
+	position: absolute;
+	left: 10%;
+	top: 14rem;
+	padding: 0.625rem 1%;
+	font-weight: bold;
+	font-family: Verdana;
+	text-shadow: 0 0.07rem 0.07rem #000;
+}
+
+#prim-nav {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.prim-nav {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	background: #272727;
+	opacity: 0.8;
+}
+
+.prim-nav > li {
+	width: 17%;
+	float: left;
+}
+
+.prim-nav > li:first-child{
+	width: 32%;
+}
+
+.prim-nav > li:first-child > a {
+	text-align: left;
+	padding-left: 5%;
+}
+
+.prim-nav > li > a {
+	display: block;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: center;
+}
+
+.prim-nav > li > a:hover {
+	color: lightblue;
+}
+
+.active > a {
+	color: lightblue;
+}
+
+.resp-icon {
+	float: left;
+	width: 10%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	background: #272727;
+	opacity: 0.8;
+	display: none;
+}
+
+.content {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.behind, .planet1, .planet2 {
+	display: block;
+	position: absolute;
+}
+
+.behind {
+	width: 100%;
+	height: 110%;
+	background: url(../img/background.jpg) top center no-repeat;
+	top: 0%;
+	left: 0%;
+	position: absolute;
+	z-index: -1;
+}
+
+.planet1 {
+	width: 22.25rem;
+	height: 21.5rem;
+	background: url(../img/bigmoon.png) no-repeat;
+	left: 65%;
+	top: 90%;
+}
+
+.planet2 {
+	background: url(../img/smallmoon.png) no-repeat;
+	width: 12.75rem;
+	height: 11.50rem;
+	left: 50%;
+	top: 70%;
+}
+
+.theend {
+	position: absolute;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 40rem;
+	padding-left: 82.6%;
+	opacity: 0;
+	z-index: 13;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 62.5em) {
+	p {
+		font-size: 3rem;
+	}
+	.planet2 {
+		left: 40%;
+		background-size: 80%;
+	}
+	.planet1 {
+		background-size: 80%;
+	}
+	.theend {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 43.75em){
+
+	p {
+		top: 15rem;
+	}
+
+    #prim-nav {
+		width: 100%;
+	}
+
+	.prim-nav {
+		width: 93%;
+	}
+
+	.resp-icon {
+		display: block;
+		width: 7%;
+	}
+
+	.resp-nav > ul {
+		visibility: hidden;
+	}
+
+	.resp-nav-visible > ul {
+		visibility: visible;
+	}
+
+	.resp-nav-visible > ul > li {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child > a {
+		text-align: center;
+		padding: 1rem 0;
+	}
+
+	.theend {
+		padding-top: 35rem;
+		padding-left: 11%;
+	}
+
+}
+
+
+

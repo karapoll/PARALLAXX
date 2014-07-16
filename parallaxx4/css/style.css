@@ -1,0 +1,250 @@
+body {
+	min-width: 61.25rem;
+	position: relative;
+}
+
+a {
+	font-family: arial, sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+}
+
+p {
+	margin: 1rem 0;	
+}
+
+p, ul {
+	font-family: "Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 200;
+	line-height: 0.9rem;
+}
+
+img {
+	border: 0;
+}
+
+h1, #pixels {
+	font-family: "Museo 900", Verdana, serif;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: "Beau Sans Pro Book", Verdana, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+
+#prim-nav {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.prim-nav {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	background: #272727;
+	opacity: 0.8;
+}
+
+.prim-nav > li {
+	width: 17%;
+	float: left;
+}
+
+.prim-nav > li:first-child{
+	width: 32%;
+}
+
+.prim-nav > li:first-child > a {
+	text-align: left;
+	padding-left: 5%;
+}
+
+.prim-nav > li > a {
+	display: block;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: center;
+}
+
+.prim-nav > li > a:hover {
+	color: lightblue;
+}
+
+.active > a {
+	color: lightblue;
+}
+
+.resp-icon {
+	float: left;
+	width: 10%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	background: #272727;
+	opacity: 0.8;
+	display: none;
+}
+
+.float-left {
+	float: left;	
+	margin: 0 0 0 2%;
+}
+
+.float-right {
+	float: right;
+	margin: 0 2% 0 0;
+}
+
+.center {
+	font-size: 2.5em;
+	padding: 5rem 0 0 0;
+	text-align: center;
+}
+
+#nav {
+	list-style: none;
+	position: fixed;
+	right: 1.25rem;
+	top: 4.375rem;
+}
+
+#nav li {
+	margin: 0 0 0.8rem 0;	
+}
+
+#intro, #second {
+	width: 100%;
+}
+
+#intro {
+	background: url(../img/background1.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 41rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#second {
+	background: url(../img/background2.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 82rem;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#second .background {
+	background: url(../img/trainers.png) 50% 0 no-repeat fixed;
+	width: 57rem;
+	height: 82rem;
+	position: absolute;
+	z-index: 200;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#third {
+	background: url(../img/background3.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 41rem;
+	overflow: hidden;
+	padding: 6rem 0 0 0;	
+}
+
+.story {
+	width: 84%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.story .float-left, .story .float-right {
+	position: relative;
+	width: 35%;
+	padding: 6rem 0;
+}
+
+#third .story .float-left {
+	padding: 18.7rem 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 43.75em){
+
+    #second .background {
+		left: 0;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#prim-nav {
+		width: 100%;
+	}
+
+	.prim-nav {
+		width: 93%;
+	}
+
+	.resp-icon {
+		display: block;
+		width: 7%;
+	}
+
+	.resp-nav > ul {
+		visibility: hidden;
+	}
+
+	.resp-nav-visible > ul {
+		visibility: visible;
+	}
+
+	.resp-nav-visible > ul > li {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child {
+		width: 100%;
+		float: none;
+	}
+
+	.resp-nav-visible > ul > li:first-child > a {
+		text-align: center;
+		padding: 1rem 0;
+	}
+
+	.float-right {
+		float: left;
+		z-index: 201;
+	}
+
+}
+
+
+
+
+
+
+
+
+
